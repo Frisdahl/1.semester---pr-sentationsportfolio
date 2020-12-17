@@ -1,0 +1,734 @@
+@charset "UTF-8";
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Sura', sans-serif;
+  background-color: #282f40;
+  width: 100%;
+}
+
+/* ------------------------------------------- header starter ------------------------------------------- */
+
+header{
+  height: 150px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  color: #282F40;
+  -webkit-text-stroke: 2px #EDF5E1;
+}
+
+
+h2{
+  font-size: 35px;
+  color: #EDF5E1;
+  text-align: center;
+}
+
+h3{
+  font-size: 30px;
+  color: #EDF5E1;
+}
+
+h5{
+  font-size: 20px;
+  color: #EDF5E1;
+}
+
+h6{
+  font-size: 25px;
+  font-family: 'proxima nova';
+}
+
+figure{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.flexbox-container{
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  border-bottom: 2px solid #EDF5E1;
+}
+
+.logo-container{
+  height: 100px;
+  width: 100px;
+  margin-left: 10%;
+}
+
+.logo-img{
+  width: 100%;
+  max-width: 100px;
+  float: left;
+}
+
+.flex-menu{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+nav li{
+   list-style: none;
+   display: inline-block; /* laver lidt mellemrum mellem nav bar. */
+   margin: 25px 50px;
+}
+
+nav a{
+  color: #EDF5E1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width) {
+
+  header .flexbox-container{
+    display: none;
+  }
+
+}
+
+
+
+/* ------------------------------------------- header slutter ------------------------------------------- */
+
+/* ------------------------------------------- Main starter ------------------------------------------- */
+
+
+main .flex-container {
+  margin: auto;
+  max-width: 100%;
+}
+
+
+main h1{
+  font-family: 'proxima nova';
+  color: #282f40;
+}
+
+
+.main-portrait{
+  max-width: 40%;
+  margin-left: 50px;
+  float: right;
+}
+
+.portrait-img{
+  max-width: 500px;
+}
+
+.flex-container{
+  display: flex;
+}
+
+
+main .text-container{
+  min-width: 40%;
+  max-width: 50%;
+  margin-top: 75px;;
+  margin-left: 10%;
+}
+
+.overskrift-h1{
+  font-size: 40px;
+  flex-grow: 1;
+}
+
+.text-p{
+  margin-top: 20px;
+  color: #E2E2E2;
+  font-family: 'sura';
+  font-size: 20px;
+  line-height: 50px;
+  max-width: 500px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+      main > *{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+
+      main .text-container{
+        margin-top: 50px;
+        min-width: 80%;
+        margin-left: 0%;
+      }
+
+      main .textp{
+        max-width: 100%;
+      }
+
+      main img{
+        margin-top: 50px;
+      }
+
+}
+
+
+
+
+/* ------------------------------------------- Main slutter ------------------------------------------- */
+
+
+/* ------------------------------------------- section starter ------------------------------------------- */
+
+section{
+  width: 100%;
+  height: 570px;
+  background-color: #E2E2E2;
+  flex-grow: 1;
+}
+
+.image-container > *{
+  display: flex;
+  margin: auto;
+}
+
+
+.image-container{
+  display: flex;
+}
+
+.css-container{
+  max-height: 265px;
+  max-width: 265px;
+  margin-top: 50%;
+}
+
+.css{
+  width: 100%;
+}
+
+.html-container{
+  max-height: 265px;
+  max-width: 265px;
+  margin-top: 50%;
+}
+
+.html{
+  width: 100%;
+}
+
+
+section .buttons{
+  display: flex;
+}
+
+
+section .buttons > *{
+  width: 120px;
+  height: 30px;
+  font-family: 'montserrat';
+  margin: auto;
+  margin-top: 50px;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #282f40;
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+.contakt:hover, .download-cv:hover{
+  color: white;
+  cursor: pointer;
+}
+
+
+.contakt:before, .download-cv:before{
+  transition: .5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #282f40;
+}
+
+.contakt:hover:before, .download-cv:hover:before{
+  transition: .5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* ------------------------------------------- Main slutter ------------------------------------------- */
+
+/* ------------------------------------------- div til portfolio starter ------------------------------------------- */
+
+.task-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.task-titel{
+    margin-top: 100px;
+}
+
+.task-h1{
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #282f40;
+}
+
+.buttons-container{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.buttons-container > *{
+  width: 150px;
+  height: 50px;
+  margin-left: 25px;
+  color: #e2e2e2;
+  font-family: 'montserrat';
+  font-weight: bold;
+  background: none;
+  border: 1px solid #EDF5E1;
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+
+.all:hover, .webdesign:hover, .grafic-design:hover, .logo-button:hover{
+  color: #282f40;
+  cursor: pointer;
+}
+
+.all:before, .webdesign:before, .grafic-design:before, .logo-button:before{
+  transition: .5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #EDF5E1;
+}
+
+.all:hover:before, .webdesign:hover:before, .grafic-design:hover:before, .logo-button:hover:before{
+  transition: .5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.all{
+  background-color: #EDF5E1;
+  color: #282F40;
+}
+
+
+.portfolio-container{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-h1{
+  text-transform: uppercase;
+}
+
+.task-container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.flex-row{
+  flex-grow: 1;
+  max-width: 400px;
+  margin: 100px 50px 0px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.portfolio-container h1{
+  text-align: center;
+}
+
+.portfolio-container > * h6{
+  font-family: 'proxima nova';
+  color: #EDF5E1;
+  margin-top: 15px;
+}
+
+.portfolio-container > * p{
+  font-family: 'proxima nova';
+  font-size: 17px;
+  color: #e2e2e2;
+  font-style: oblique;
+  line-height: 30px;
+  margin-top: 5%;
+}
+
+.portfolio-container > * img{
+  height: 400px;
+  width: 400px;
+  border: 1px solid #EDF5E1;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .flex-wrapper{
+      justify-content: center;
+    }
+
+
+
+}
+
+/* ------------------------------------------- Portfolio slutter ------------------------------------------- */
+
+/* ------------------------------------------- aside til about me starter ------------------------------------------- */
+
+aside{
+  width: 100%;
+  height: 1500px;
+  margin-top: 200px;
+}
+
+
+aside .flexbox{
+  display: flex;
+}
+
+aside .flexbox > *{
+  margin: 50px 50px 50px 50px;
+}
+
+
+aside h1{
+  font-family: 'proxima nova';
+  text-align: center;
+  font-size: 60px;
+  color: #282f40;
+}
+
+aside p {
+  margin-right: 50px;
+  color: #E2E2E2;
+  font-family: 'sura';
+  font-size: 20px;
+  line-height: 50px;
+  max-width: 700px;
+}
+
+.about-portrait-container{
+  max-width: 40%;
+}
+
+
+.about-portrait{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+.it-compentencies{
+  width: 100%;
+  margin-top: 100px;
+}
+
+.it-compentencies > *{
+  margin-top: 40px;
+}
+
+.it-compentencies h1{
+  font-size: 30px;
+}
+
+.it-compentencies ul > *{
+  height: 24px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.it-compentencies ul li{
+  margin: 0% 10% 50px 10%;
+  font-family: 'proxma nova';
+  list-style: none;
+  color: #EDF5E1;
+}
+
+.progress-bar{
+    border: 1px solid #EDF5E1;
+    height: 24px;
+    width: 100%;
+}
+
+#percentage-photoshop{
+  background-color: #EDF5E1;
+  width: 80%;
+  height: 24px;
+}
+
+#percentage-html{
+  background-color: #EDF5E1;
+  width: 70%;
+  height: 24px;
+}
+
+#percentage-css{
+  background-color: #EDF5E1;
+  width: 85%;
+  height: 24px;
+}
+
+#percentage-illustrator{
+  background-color: #EDF5E1;
+  width: 60%;
+  height: 24px;
+}
+
+#percentage-premiere{
+  background-color: #EDF5E1;
+  width: 65%;
+  height: 24px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    aside{
+      height: 2000px;
+    }
+
+    aside .flexbox{
+    display: block;
+    height: 1000px;
+    text-align: center;
+    width: 100%;
+    }
+
+
+    aside .about-portrait-container{
+    margin: auto;
+    max-width: 60%;
+    min-width: 40%;
+    }
+
+
+    aside .text-container {
+    display: block;
+    max-width: 80%;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    }
+
+    aside .text-container > *{
+    padding-top: 25px;
+    }
+
+
+    .it-compentencies{
+      margin-top: 400px;
+    }
+
+
+}
+
+/* ------------------------------------------- aside til about me slutter ------------------------------------------- */
+
+/* ------------------------------------------- div til contact formular starter ------------------------------------------- */
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #e2e2e2;
+  color: #282F40;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  opacity: 50%;
+}
+
+label {
+  color: #EDF5E1;
+}
+
+
+/* Add a background color and some padding around the form */
+
+.contact-container{
+  width: 100%;
+  margin-top: 5%;
+}
+
+
+.contact-titel{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact-boxes{
+  display: flex;
+}
+
+
+.contact-formular{
+  flex-grow: 1;
+  max-width: 40%;
+  padding: 20px;
+  margin-right: 10%;
+}
+
+.contact{
+  height: 509px;
+  width: 40%;
+  margin-left: 10%;
+}
+
+.contact > *{
+  margin-top: 20px;
+}
+
+.contact p{
+  font-size: 20px;
+  color: #e2e2e2;
+}
+
+#social-media{
+  margin-top: 100px;
+}
+
+.icon-container{
+  display: flex;
+  height: 50px;
+  width: 200px;
+}
+
+.icon-container > *{
+  margin-left: 15px;
+}
+
+.icon-container > * img{
+  width: 100%;
+}
+
+.icons{
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+}
+
+.icon-container a:hover{
+  opacity: 50%;
+}
+
+
+@media screen and (max-width 1024px) {
+
+    .contact-titel{
+
+    }
+
+
+}
+
+
+
+
+/* ------------------------------------------- div til contact formular slutter ------------------------------------------- */
+
+/* ------------------------------------------- footer starter ------------------------------------------- */
+
+footer > *{
+  margin: auto;
+  text-align: center;
+}
+
+footer{
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  height: 80px;
+  background-color: #798FA8;
+}
+
+footer p{
+  color: #EDF5E1;
+}
+
+.copyright-container{
+  margin-left: 10%;
+}
+
+
+/* ------------------------------------------- footer slutter ------------------------------------------- */
